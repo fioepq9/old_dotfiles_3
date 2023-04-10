@@ -1,0 +1,1 @@
+alias ls="exa --icons -l -g -h --time-style long-iso"
