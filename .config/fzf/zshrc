@@ -1,0 +1,6 @@
+main=$(gum style --foreground 212 'fzf')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
+jp() {
+  cd "$(FZF_DEFAULT_COMMAND='fd --type d --strip-cwd-prefix --follow --hidden --exclude .git --color=always' fzf)"
+}
