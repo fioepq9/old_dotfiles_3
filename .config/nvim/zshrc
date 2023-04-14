@@ -1,0 +1,6 @@
+main=$(gum style --foreground 212 'nvim')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
+alias vi="nvim"
+alias vim="nvim"
+export EDITOR="nvim"
