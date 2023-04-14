@@ -1,0 +1,4 @@
+main=$(gum style --foreground 212 'just')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
+alias j='just --justfile ~/.config/just/justfile --working-directory .'
