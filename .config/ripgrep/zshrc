@@ -1,0 +1,4 @@
+main=$(gum style --foreground 212 'ripgrep')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
+alias grep="rg"
