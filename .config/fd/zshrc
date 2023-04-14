@@ -1,0 +1,8 @@
+main=$(gum style --foreground 212 'fd')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
+alias find="fd"
+export FZF_DEFAULT_COMMAND='fd --strip-cwd-prefix --type file --follow --hidden --exclude .git --color=always'
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
