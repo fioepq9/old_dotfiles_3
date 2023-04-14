@@ -1,1 +1,4 @@
+main=$(gum style --foreground 212 'exa')
+gum join "Applyed" " $main" ": $(dirname $(readlink -f "$0"))"
+
 alias ls="exa --icons -l -g -h --time-style long-iso"
